@@ -6,9 +6,11 @@ for (let i = 0; i < sentence.length; i++) {
       process.stdout.write(sentence[i]);
     }, delay);
     delay += 50;
-
   } else {
-    //console.log()
+    setTimeout(() => {
+      process.stdout.write("\n");
+    }, delay);
+    delay += 50;
   }
 
 }
